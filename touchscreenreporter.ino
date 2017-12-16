@@ -40,25 +40,21 @@ void setup()
 void loop()
 {
   p = ts.getPoint();
-
   xval = String(p.x);
   xval.toCharArray(xbuff,7);
   Tft.drawString(xbuff,60,50,5,YELLOW);
 
-
+  p = ts.getPoint();
   yval = String(p.y);
   yval.toCharArray(ybuff,7);
   Tft.drawString(ybuff,120,50,5,RED);
 
-
+  p = ts.getPoint();
   zval = String(p.z);
   zval.toCharArray(zbuff,7);
   Tft.drawString(zbuff,180,50,5,GREEN);
   delay(250);
 
   Tft.fillRectangle(15,48,200,150,BLACK);
-
-
-
 }
 
