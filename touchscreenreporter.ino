@@ -32,7 +32,9 @@ void setup()
   Tft.init();  //init TFT library
   Tft.setDisplayDirect(UP2DOWN);
   Tft.drawString("TOUCHSCREENREPORTER",12,12,1,CYAN);
-
+  Tft.drawString("x",60,12,5,CYAN);
+  Tft.drawString("y",120,12,5,CYAN);
+  Tft.drawString("z",180,12,5,CYAN);
 }
 
 void loop()
